@@ -6,7 +6,6 @@ import truck from "../../../assets/images/truck.png";
 import people from "../../../assets/images/people.png";
 import Button from '../../ui/Button';
 
-
 export default function Product() {
     return (
         <div>
