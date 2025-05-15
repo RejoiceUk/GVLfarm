@@ -20,7 +20,7 @@ const Navbar = () => {
 
     return (
         <header className="bg-white overflow-x-hidden mb-8">
-            <nav className="flex justify-between bg-white shadow-md items-center py-1 md:px-[3%] px-[8%] w-full mx-0 px-[10%] z-[9999] fixed top-0 left-0">
+            <nav className="flex justify-between bg-white shadow-md items-center py-1 px-[10%] w-full mx-0 px-[10%] z-[9999] fixed top-0 left-0">
                 <div className="cursor-pointer hover:scale-[1.1] duration-300 ease-in-out">
                     <NavLink to="/">
                         <div className="w-[90px]">
