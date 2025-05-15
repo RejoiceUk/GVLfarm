@@ -1,12 +1,12 @@
 import React from 'react';
-import bgimage from "../../assets/images/bg1.png";
-import Button from '../ui/Button';
-import next from "../../assets/images/next.png";
-import prev from "../../assets/images/prev.png";
-import farming from "../../assets/images/farming.png";
-import livestock from "../../assets/images/livestock.png";
-import research from "../../assets/images/traningandresearch.png";
-import agritech from "../../assets/images/agritech.png";
+import bgimage from "../../../assets/images/bg1.png";
+import next from "../../../assets/images/next.png";
+import prev from "../../../assets/images/prev.png";
+import farming from "../../../assets/images/farming.png";
+import livestock from "../../../assets/images/livestock.png";
+import research from "../../../assets/images/traningandresearch.png";
+import agritech from "../../../assets/images/agritech.png";
+import Button from '../../ui/Button';
 
 export default function Hero() {
     return (
