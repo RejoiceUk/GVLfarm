@@ -57,12 +57,20 @@ const Navbar = () => {
                                 </NavLink>
                             </li>
 
+                             <li>
+                                <NavLink to="/blog" className="group relative inline-block py-2 md:px-2 px-5 focus:text-[#0d438d]" onClick={handleLinkClick}>
+                                    Blog
+                                    <span className="absolute bottom-0 left-0 h-[3px] w-0 bg-[var(--primary-color)] rounded-full transition-all duration-300 group-hover:w-full group-focus:w-full"></span>
+                                </NavLink>
+                            </li>
+
                             <li>
                                 <NavLink to="" className="group relative bg-[var(--primary-color)] text-white rounded inline-block py-1 md:px-6 px-5 focus:text-[#0d438d] hover:shadow-lg hover:shadow-gray-400" onClick={handleLinkClick}>
                                     Contact
                                     <span className="absolute bottom-0 left-0 w-0 rounded-full transition-all duration-300 group-hover:w-full group-focus:w-full"></span>
                                 </NavLink>
                             </li>
+                            
                         </ul>
                     </div>
                 </div>
