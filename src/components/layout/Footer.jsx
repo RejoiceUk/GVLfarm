@@ -26,34 +26,34 @@ export default function Footer() {
 
                     <div className="md:text-left md:col-span-2">
                         <ul className="flex flex-col md:pr-10 md:gap-[1vw]">
-                            <h5 className='font-[500] text-[var(--primary-color)]'>Quick links</h5>
+                            <h5 className='font-[600] text-[var(--primary-color)]'>Quick links</h5>
                             <li>
                                 <NavLink to="/" className="hover:text-[var(--primary-color)]">
                                     Home
                                 </NavLink>
                             </li>
                             <li>
-                                <NavLink to="" className="hover:text-[var(--primary-color)]">
+                                <NavLink to="/about" className="hover:text-[var(--primary-color)]">
                                     About
                                 </NavLink>
                             </li>
                             <li>
-                                <NavLink to="" className="hover:text-[var(--primary-color)]">
+                                <NavLink to="/contact" className="hover:text-[var(--primary-color)]">
                                     Contact
                                 </NavLink>
                             </li>
                             <li>
-                                <NavLink to="" className="hover:text-[var(--primary-color)]">
+                                <NavLink to="/product" className="hover:text-[var(--primary-color)]">
                                     Our Product and Services
                                 </NavLink>
                             </li>
                             <li>
-                                <NavLink to="" className="hover:text-[var(--primary-color)]">
+                                <NavLink to="/blog" className="hover:text-[var(--primary-color)]">
                                     Blog and Article
                                 </NavLink>
                             </li>
                             <li>
-                                <NavLink to="" className="hover:text-[var(--primary-color)]">
+                                <NavLink to="/media" className="hover:text-[var(--primary-color)]">
                                     Media/Gallery
                                 </NavLink>
                             </li>
@@ -62,15 +62,15 @@ export default function Footer() {
 
                     <div className="md:text-left md:col-span-2">
                         <ul className="flex flex-col md:pr-10 md:gap-[1vw]">
-                            <h5 className='font-[500] text-[var(--primary-color)]'>Legal</h5>
+                            <h5 className='font-[600] text-[var(--primary-color)]'>Legal</h5>
                             <li>
-                                <NavLink to="/" className="hover:text-[var(--primary-color)]">
+                                <NavLink to="/policy" className="hover:text-[var(--primary-color)]">
                                     Privacy Policy
                                 </NavLink>
                             </li>
                             
                             <li>
-                                <NavLink to="" className="hover:text-[var(--primary-color)]">
+                                <NavLink to="/termstouse" className="hover:text-[var(--primary-color)]">
                                     Terms of Use
                                 </NavLink>
                             </li>
@@ -79,7 +79,7 @@ export default function Footer() {
 
                     <div className="md:text-left md:col-span-3">
                         <ul className="flex flex-col md:pr-10 md:gap-[1vw]">
-                            <h5 className='font-[500] text-[var(--primary-color)]'>ConTact Us</h5>
+                            <h5 className='font-[600] text-[var(--primary-color)]'>ConTact Us</h5>
                             <li>
                                 <NavLink to="/" className="hover:text-[var(--primary-color)]">
                                    Business inquiry: +256 200 955 930
@@ -95,7 +95,7 @@ export default function Footer() {
                     </div>
                     {/* icons */}
                     <div className='md:text-left md:col-span-2'>
-                        <h5 className='font-[500] text-[var(--primary-color)] mb-4'>Socials</h5>
+                        <h5 className='font-[600] text-[var(--primary-color)] mb-4'>Socials</h5>
                         <div className="flex space-x-4 text-2xl text-[var(--primary-color)] text-[.8rem]">
                             <i className="fab fa-facebook hover:text-blue-800"></i>
                             <i className="fab fa-twitter hover:text-blue-500"></i>
