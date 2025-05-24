@@ -3,6 +3,7 @@ import chickens from '../../../assets/images/chickens.png';
 import casava from '../../../assets/images/casava.png';
 import fruits from '../../../assets/images/fruits.png';
 import Button from '../../ui/Button';
+import { NavLink } from 'react-router-dom';
 
 export default function About() {
     return (
@@ -13,7 +14,8 @@ export default function About() {
                     <p className='text-[.8rem] leading-[2] text-[#525560] font-[400]'>Gandaria Integrated Farms is the agricultural arm of Gandaria Ventures Limited, dedicated to advancing sustainable farming and food security in Nigeria. Our work spans crop cultivation, livestock production, and agritech solutions—blending tradition with innovation to nourish communities and empower farmers.
                         With deep roots in local expertise and a forward-thinking approach, we’re committed to building a resilient food system, one harvest at a time.</p>
                     <div className='mt-8'>
-                        <Button buttonVariant='dark' text='Read More' />
+                        <NavLink to="/about"><Button buttonVariant='dark' text='Read More' /></NavLink>
+                        
                     </div>
                 </div>
 

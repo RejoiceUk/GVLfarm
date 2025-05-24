@@ -5,6 +5,7 @@ import vegitable2 from "../../../assets/images/vegitable2.png";
 import truck from "../../../assets/images/truck.png";
 import people from "../../../assets/images/people.png";
 import Button from '../../ui/Button';
+import { NavLink } from 'react-router-dom';
 
 export default function Product() {
     return (
@@ -78,7 +79,7 @@ export default function Product() {
                             visual journey captures the essence of who we are and what we stand for.</p>
                         <p>Take a moment to see how we blend tradition with technology to build a better agricultural future—one harvest at a time.</p>
                     </div>
-                    <Button buttonVariant='dark' text='View our Farm' />
+                    <NavLink to="/media"><Button buttonVariant='dark' text='View our Farm' /></NavLink>
                 </div>
             </div>
         </div>
