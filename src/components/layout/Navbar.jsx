@@ -29,53 +29,126 @@ const Navbar = () => {
                     </NavLink>
                 </div>
 
-                <div className={`nav-links duration-500 md:static absolute md:min-h-fit min-h-[60vh] left-0 ${menuOpen ? "top-[80%] min-h-[30vh] text-white backdrop-blur-md white/30 gz-10 py-2" : "top-[-900%]"} md:w-auto w-full flex items-center`}>
+                <div className={`nav-links duration-500 md:static absolute md:min-h-fit min-h-[60vh] left-0 ${menuOpen ? "top-[80%] min-h-[30vh] text-[var(--primary)] backdrop-blur- bg-gray-100 gz-10 py-2" : "top-[-900%]"} md:w-auto w-full flex items-center`}>
                     <div className="pl-12 flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-6 w-full justify-between">
                         <ul className="flex md:flex-row flex-col md:pr-16 md:items-center gap-4">
                             <li>
                                 <NavLink
                                     to="/"
-                                    className="group relative inline-block py-2 md:px-2 px-5 focus:text-[#0d438d]"
+                                    className={({ isActive }) => 
+                                        `group relative inline-block py-2 md:px-2 px-5 ${
+                                            isActive ? 'text-[#0d438d]' : 'hover:text-[#0d438d]'
+                                        }`
+                                    }
                                     onClick={handleLinkClick}
                                 >
-                                    Home
-                                    <span className="absolute bottom-0 left-0 h-[3px] bg-[var(--primary-color)] rounded-full transition-all duration-300 group-hover:w-full group-focus:w-full"></span>
+                                    {({ isActive }) => (
+                                        <>
+                                            Home
+                                            <span className={`absolute bottom-0 left-0 h-[3px] bg-[var(--primary-color)] rounded-full transition-all duration-300 ${
+                                                isActive ? 'w-full' : 'w-0 group-hover:w-full'
+                                            }`}></span>
+                                        </>
+                                    )}
                                 </NavLink>
                             </li>
 
                             <li>
-                                <NavLink to="/about" className="group relative inline-block py-2 md:px-2 px-5 focus:text-[#0d438d]" onClick={handleLinkClick}>
-                                    About
-                                    <span className="absolute bottom-0 left-0 h-[3px] w-0 bg-[var(--primary-color)] rounded-full transition-all duration-300 group-hover:w-full group-focus:w-full"></span>
+                                <NavLink 
+                                    to="/about" 
+                                    className={({ isActive }) => 
+                                        `group relative inline-block py-2 md:px-2 px-5 ${
+                                            isActive ? 'text-[#0d438d]' : 'hover:text-[#0d438d]'
+                                        }`
+                                    }
+                                    onClick={handleLinkClick}
+                                >
+                                    {({ isActive }) => (
+                                        <>
+                                            About
+                                            <span className={`absolute bottom-0 left-0 h-[3px] bg-[var(--primary-color)] rounded-full transition-all duration-300 ${
+                                                isActive ? 'w-full' : 'w-0 group-hover:w-full'
+                                            }`}></span>
+                                        </>
+                                    )}
                                 </NavLink>
                             </li>
 
                             <li>
-                                <NavLink to="/product" className="group relative inline-block py-2 md:px-2 px-5 focus:text-[#0d438d]" onClick={handleLinkClick}>
-                                    Product
-                                    <span className="absolute bottom-0 left-0 h-[3px] w-0 bg-[var(--primary-color)] rounded-full transition-all duration-300 group-hover:w-full group-focus:w-full"></span>
+                                <NavLink 
+                                    to="/product" 
+                                    className={({ isActive }) => 
+                                        `group relative inline-block py-2 md:px-2 px-5 ${
+                                            isActive ? 'text-[#0d438d]' : 'hover:text-[#0d438d]'
+                                        }`
+                                    }
+                                    onClick={handleLinkClick}
+                                >
+                                    {({ isActive }) => (
+                                        <>
+                                            Product
+                                            <span className={`absolute bottom-0 left-0 h-[3px] bg-[var(--primary-color)] rounded-full transition-all duration-300 ${
+                                                isActive ? 'w-full' : 'w-0 group-hover:w-full'
+                                            }`}></span>
+                                        </>
+                                    )}
                                 </NavLink>
                             </li>
 
-                             <li>
-                                <NavLink to="/blog" className="group relative inline-block py-2 md:px-2 px-5 focus:text-[#0d438d]" onClick={handleLinkClick}>
-                                    Blog
-                                    <span className="absolute bottom-0 left-0 h-[3px] w-0 bg-[var(--primary-color)] rounded-full transition-all duration-300 group-hover:w-full group-focus:w-full"></span>
+                             {/* <li>
+                                <NavLink 
+                                    to="/blog" 
+                                    className={({ isActive }) => 
+                                        `group relative inline-block py-2 md:px-2 px-5 ${
+                                            isActive ? 'text-[#0d438d]' : 'hover:text-[#0d438d]'
+                                        }`
+                                    }
+                                    onClick={handleLinkClick}
+                                >
+                                    {({ isActive }) => (
+                                        <>
+                                            Blog
+                                            <span className={`absolute bottom-0 left-0 h-[3px] bg-[var(--primary-color)] rounded-full transition-all duration-300 ${
+                                                isActive ? 'w-full' : 'w-0 group-hover:w-full'
+                                            }`}></span>
+                                        </>
+                                    )}
                                 </NavLink>
-                            </li>
-
+                            </li> */}
 
                             <li>
-                                <NavLink to="/media" className="group relative inline-block py-2 md:px-2 px-5 focus:text-[#0d438d]" onClick={handleLinkClick}>
-                                    Media Gallery
-                                    <span className="absolute bottom-0 left-0 h-[3px] w-0 bg-[var(--primary-color)] rounded-full transition-all duration-300 group-hover:w-full group-focus:w-full"></span>
+                                <NavLink 
+                                    to="/media" 
+                                    className={({ isActive }) => 
+                                        `group relative inline-block py-2 md:px-2 px-5 ${
+                                            isActive ? 'text-[#0d438d]' : 'hover:text-[#0d438d]'
+                                        }`
+                                    }
+                                    onClick={handleLinkClick}
+                                >
+                                    {({ isActive }) => (
+                                        <>
+                                            Media Gallery
+                                            <span className={`absolute bottom-0 left-0 h-[3px] bg-[var(--primary-color)] rounded-full transition-all duration-300 ${
+                                                isActive ? 'w-full' : 'w-0 group-hover:w-full'
+                                            }`}></span>
+                                        </>
+                                    )}
                                 </NavLink>
                             </li>
 
                             <li>
-                                <NavLink to="/contact" className="group relative bg-[var(--primary-color)] text-white rounded inline-block py-1 md:px-6 px-5 focus:text-[#0d438d] hover:shadow-lg hover:shadow-gray-400" onClick={handleLinkClick}>
+                                <NavLink 
+                                    to="/contact" 
+                                    className={({ isActive }) => 
+                                        `group relative bg-[var(--primary-color)] text-white rounded inline-block py-1 md:px-6 px-5 hover:shadow-lg hover:shadow-gray-400 ${
+                                            isActive ? 'text-green-600' : ''
+                                        }`
+                                    }
+                                    onClick={handleLinkClick}
+                                >
                                     Contact
-                                    <span className="absolute bottom-0 left-0 w-0 rounded-full transition-all duration-300 group-hover:w-full group-focus:w-full"></span>
+                                    <span className="absolute bottom-0 left-0 w-0 rounded-full transition-all duration-300 group-hover:w-full"></span>
                                 </NavLink>
                             </li>
                             

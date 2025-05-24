@@ -5,6 +5,7 @@ import email from "../../../assets/images/email.png";
 export default function Contact() {
     return (
         <div className='px-[10%] py-[3%]'>
+             <h3 className='text-[1.5rem] text-[var(--primary)] py-8 font-[700]'>Have any Question?  <br /> Get in Touch!</h3>
             <div className='grid md:grid-cols-2 gap-6'>
                 <div className='grid grid-cols-2 gap-6 p-4 text-[1.2rem] font-[500] text-[var(--primary-color)]'>
                     <div className='flex flex-col gap-2'>

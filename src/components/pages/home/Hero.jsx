@@ -9,6 +9,7 @@ import livestock from "../../../assets/images/livestock.png";
 import research from "../../../assets/images/traningandresearch.png";
 import agritech from "../../../assets/images/agritech.png";
 import Button from '../../ui/Button';
+import { NavLink } from 'react-router-dom';
 
 const backgrounds = [bg1, bg2, bg3];
 
@@ -53,8 +54,8 @@ export default function Hero() {
           </p>
 
           <div className='flex gap-6 justify-center mt-10'>
-            <Button buttonVariant='transparent' text='Explore Our Farm' />
-            <Button buttonVariant='white' text='Contact Us' />
+            <NavLink to="/product"> <Button buttonVariant='transparent' text='Explore Our Farm' /></NavLink>
+             <NavLink to="/contact"><Button buttonVariant='white' text='Contact Us' /></NavLink>
           </div>
 
           <div className='flex gap-6 justify-center pt-20'>

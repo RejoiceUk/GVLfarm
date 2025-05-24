@@ -47,11 +47,11 @@ export default function Footer() {
                                     Our Product and Services
                                 </NavLink>
                             </li>
-                            <li>
+                            {/* <li>
                                 <NavLink to="/blog" className="hover:text-[var(--primary-color)]">
                                     Blog and Article
                                 </NavLink>
-                            </li>
+                            </li> */}
                             <li>
                                 <NavLink to="/media" className="hover:text-[var(--primary-color)]">
                                     Media/Gallery
@@ -64,13 +64,13 @@ export default function Footer() {
                         <ul className="flex flex-col md:pr-10 md:gap-[1vw]">
                             <h5 className='font-[600] text-[var(--primary-color)]'>Legal</h5>
                             <li>
-                                <NavLink to="/policy" className="hover:text-[var(--primary-color)]">
+                                <NavLink to="/privacy-policy" className="hover:text-[var(--primary-color)]">
                                     Privacy Policy
                                 </NavLink>
                             </li>
                             
                             <li>
-                                <NavLink to="/termstouse" className="hover:text-[var(--primary-color)]">
+                                <NavLink to="/terms-of-use" className="hover:text-[var(--primary-color)]">
                                     Terms of Use
                                 </NavLink>
                             </li>
