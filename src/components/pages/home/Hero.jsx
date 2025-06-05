@@ -48,7 +48,7 @@ export default function Hero() {
           <h1 className='md:text-[3rem] text-[2rem] font-[700] leading-[3rem] mb-2'>
             Feeding the Future, Sustainably
           </h1>
-          <p className='md:text-[.9rem] text-[.7rem] w-md'>
+          <p className='md:text-[.91rem] text-[.7rem] w-md'>
             From seed to harvest, we cultivate quality with a commitment to sustainability <br />
             and innovation in agriculture.
           </p>
