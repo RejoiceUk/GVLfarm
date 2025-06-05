@@ -2,7 +2,7 @@ import { useState } from "react";
 import { IonIcon } from "@ionic/react";
 import { menuOutline, closeOutline } from "ionicons/icons";
 import { NavLink } from "react-router-dom";
-import logo from '../../assets/images/logo.png';
+import logo from '../../assets/images/logo.jpg';
 
 const Navbar = () => {
     const [menuOpen, setMenuOpen] = useState(false);

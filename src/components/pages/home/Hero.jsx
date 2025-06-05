@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import bg1 from "../../../assets/images/bg1.png";
-import bg2 from "../../../assets/images/covervideo.png";
-import bg3 from "../../../assets/images/fruits.png";
+import bg1 from "../../../assets/images/background1.jpg";
+import bg2 from "../../../assets/images/backgground2.jpg";
+import bg3 from "../../../assets/images/background3.jpg";
 import next from "../../../assets/images/next.png";
 import prev from "../../../assets/images/prev.png";
 import farming from "../../../assets/images/farming.png";
@@ -41,14 +41,14 @@ export default function Hero() {
   return (
     <div className='flex flex-col'>
       <div
-        className="pt-6 h-[94.4vh] bg-no-repeat bg-center bg-cover text-white flex justify-center items-center transition-all duration-1000 ease-in-out"
+        className="pt-6 h-[94.4vh] bg-no-repeat bg-center bg-cover text-[var(--primary-color)] flex justify-center items-center transition-all duration-1000 ease-in-out"
         style={{ backgroundImage: `url(${backgrounds[currentIndex]})` }}
       >
         <div className='text-center'>
           <h1 className='md:text-[3rem] text-[2rem] font-[700] leading-[3rem] mb-2'>
             Feeding the Future, Sustainably
           </h1>
-          <p className='md:text-[.9rem] text-[.7rem] w-md'>
+          <p className='md:text-[.91rem] text-[.7rem] w-md'>
             From seed to harvest, we cultivate quality with a commitment to sustainability <br />
             and innovation in agriculture.
           </p>
