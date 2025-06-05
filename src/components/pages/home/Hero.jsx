@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import bg1 from "../../../assets/images/bg1.png";
-import bg2 from "../../../assets/images/covervideo.png";
-import bg3 from "../../../assets/images/fruits.png";
+import bg1 from "../../../assets/images/background1.jpg";
+import bg2 from "../../../assets/images/backgground2.jpg";
+import bg3 from "../../../assets/images/background3.jpg";
 import next from "../../../assets/images/next.png";
 import prev from "../../../assets/images/prev.png";
 import farming from "../../../assets/images/farming.png";
@@ -41,7 +41,7 @@ export default function Hero() {
   return (
     <div className='flex flex-col'>
       <div
-        className="pt-6 h-[94.4vh] bg-no-repeat bg-center bg-cover text-white flex justify-center items-center transition-all duration-1000 ease-in-out"
+        className="pt-6 h-[94.4vh] bg-no-repeat bg-center bg-cover text-[var(--primary-color)] flex justify-center items-center transition-all duration-1000 ease-in-out"
         style={{ backgroundImage: `url(${backgrounds[currentIndex]})` }}
       >
         <div className='text-center'>
